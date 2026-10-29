@@ -1,0 +1,276 @@
+
+{
+  "decks": [
+    {
+      "id": "js-basics",
+      "title": "JavaScript Basics",
+      "category": "JavaScript",
+      "cards": [
+        {
+          "id": "js-1",
+          "question": "What does typeof null return?",
+          "answer": "'object' (a historical quirk)",
+          "options": ["'null'", "'object'", "'undefined'", "'number'"],
+          "correctIndex": 1
+        },
+        {
+          "id": "js-2",
+          "question": "Which method creates a new array by transforming each item?",
+          "answer": "Array.prototype.map",
+          "options": ["forEach", "filter", "map", "reduce"],
+          "correctIndex": 2
+        },
+        {
+          "id": "js-3",
+          "question": "Which keyword declares a block-scoped variable that can be reassigned?",
+          "answer": "let",
+          "options": ["const", "let", "var", "static"],
+          "correctIndex": 1
+        },
+        {
+          "id": "js-4",
+          "question": "Which operator checks both value and type equality?",
+          "answer": "===",
+          "options": ["=", "==", "===", "!="],
+          "correctIndex": 2
+        },
+        {
+          "id": "js-5",
+          "question": "Which array method returns a new array containing items that pass a condition?",
+          "answer": "filter()",
+          "options": ["map()", "filter()", "findIndex()", "forEach()"],
+          "correctIndex": 1
+        },
+        {
+          "id": "js-6",
+          "question": "What does JSON.stringify() do?",
+          "answer": "Converts a JavaScript value into a JSON string",
+          "options": [
+            "Converts JSON into an object",
+            "Converts a JavaScript value into a JSON string",
+            "Validates HTML",
+            "Creates a new array"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "js-7",
+          "question": "Which method converts a JSON string into a JavaScript value?",
+          "answer": "JSON.parse()",
+          "options": ["JSON.stringify()", "JSON.parse()", "JSON.convert()", "JSON.object()"],
+          "correctIndex": 1
+        },
+        {
+          "id": "js-8",
+          "question": "What does an async function return?",
+          "answer": "A Promise",
+          "options": ["A string", "A callback", "A Promise", "Always undefined"],
+          "correctIndex": 2
+        },
+        {
+          "id": "js-9",
+          "question": "Which keyword pauses execution inside an async function until a Promise settles?",
+          "answer": "await",
+          "options": ["async", "await", "yield", "defer"],
+          "correctIndex": 1
+        },
+        {
+          "id": "js-10",
+          "question": "Which method adds one or more elements to the end of an array?",
+          "answer": "push()",
+          "options": ["pop()", "shift()", "push()", "unshift()"],
+          "correctIndex": 2
+        },
+        {
+          "id": "js-11",
+          "question": "What is the result of Boolean('false')?",
+          "answer": "true",
+          "options": ["true", "false", "undefined", "TypeError"],
+          "correctIndex": 0
+        },
+        {
+          "id": "js-12",
+          "question": "Which array method returns the first element that satisfies a condition?",
+          "answer": "find()",
+          "options": ["filter()", "map()", "find()", "reduce()"],
+          "correctIndex": 2
+        }
+      ]
+    },
+    {
+      "id": "ts-fundamentals",
+      "title": "TypeScript Fundamentals",
+      "category": "TypeScript",
+      "cards": [
+        {
+          "id": "ts-1",
+          "question": "Which keyword defines an object shape that can be extended?",
+          "answer": "interface",
+          "options": ["enum", "interface", "namespace", "abstract"],
+          "correctIndex": 1
+        },
+        {
+          "id": "ts-2",
+          "question": "Which type allows a value to be either a string or a number?",
+          "answer": "string | number",
+          "options": ["string & number", "string | number", "string, number", "any[]"],
+          "correctIndex": 1
+        },
+        {
+          "id": "ts-3",
+          "question": "Which command compiles TypeScript using the project's tsconfig.json?",
+          "answer": "tsc",
+          "options": ["node", "npm", "tsc", "vite"],
+          "correctIndex": 2
+        },
+        {
+          "id": "ts-4",
+          "question": "Which type is generally safer than any when the value's type is unknown?",
+          "answer": "unknown",
+          "options": ["any", "unknown", "void", "never"],
+          "correctIndex": 1
+        },
+        {
+          "id": "ts-5",
+          "question": "How do you declare a variable that must contain a string?",
+          "answer": "let name: string = 'Alex';",
+          "options": [
+            "let name = string;",
+            "let name: string = 'Alex';",
+            "string name = 'Alex';",
+            "let string: name = 'Alex';"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "ts-6",
+          "question": "Which TypeScript feature lets you define a fixed set of possible string or numeric values using named members?",
+          "answer": "enum",
+          "options": ["interface", "namespace", "enum", "type assertion"],
+          "correctIndex": 2
+        },
+        {
+          "id": "ts-7",
+          "question": "What does the void return type usually indicate for a function?",
+          "answer": "The function does not return a meaningful value",
+          "options": [
+            "The function always returns null",
+            "The function does not return a meaningful value",
+            "The function never finishes",
+            "The function returns a string"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "ts-8",
+          "question": "Which syntax defines a type that can be either a string or a number?",
+          "answer": "type ID = string | number;",
+          "options": [
+            "type ID = string & number;",
+            "type ID = string | number;",
+            "interface ID = string, number;",
+            "enum ID = string | number;"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "ts-9",
+          "question": "What is the purpose of a generic type parameter such as T?",
+          "answer": "To create reusable code that works with different types while preserving type information",
+          "options": [
+            "To disable type checking",
+            "To convert every value to text",
+            "To create reusable code that preserves type information",
+            "To run code asynchronously"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "ts-10",
+          "question": "Which operator can narrow a union type by checking a value's runtime type?",
+          "answer": "typeof",
+          "options": ["keyof", "typeof", "satisfies", "extends"],
+          "correctIndex": 1
+        },
+        {
+          "id": "ts-11",
+          "question": "What does the optional property marker ? mean in an interface?",
+          "answer": "The property may be omitted",
+          "options": [
+            "The property must be null",
+            "The property is read-only",
+            "The property may be omitted",
+            "The property is private"
+          ],
+          "correctIndex": 2
+        },
+        {
+          "id": "ts-12",
+          "question": "Which keyword prevents a class property from being reassigned after initialization?",
+          "answer": "readonly",
+          "options": ["static", "readonly", "private", "override"],
+          "correctIndex": 1
+        }
+      ]
+    },
+    {
+      "id": "web-fundamentals",
+      "title": "Web Development Fundamentals",
+      "category": "Web Development",
+      "cards": [
+        {
+          "id": "web-1",
+          "question": "What does HTML stand for?",
+          "answer": "HyperText Markup Language",
+          "options": [
+            "HighText Machine Language",
+            "HyperText Markup Language",
+            "HyperTransfer Markdown Language",
+            "Home Tool Markup Language"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "web-2",
+          "question": "Which CSS property changes the text color?",
+          "answer": "color",
+          "options": ["background", "font-style", "color", "text-align"],
+          "correctIndex": 2
+        },
+        {
+          "id": "web-3",
+          "question": "Which HTTP method is commonly used to retrieve a resource?",
+          "answer": "GET",
+          "options": ["POST", "GET", "PATCH", "DELETE"],
+          "correctIndex": 1
+        },
+        {
+          "id": "web-4",
+          "question": "What does REST commonly describe in web development?",
+          "answer": "An architectural style for designing networked APIs",
+          "options": [
+            "A database query language",
+            "An architectural style for designing networked APIs",
+            "A CSS framework",
+            "A JavaScript compiler"
+          ],
+          "correctIndex": 1
+        },
+        {
+          "id": "web-5",
+          "question": "Which HTTP status code usually indicates a successful resource creation?",
+          "answer": "201 Created",
+          "options": ["200 OK", "201 Created", "400 Bad Request", "404 Not Found"],
+          "correctIndex": 1
+        },
+        {
+          "id": "web-6",
+          "question": "What is the main purpose of Git?",
+          "answer": "Version control",
+          "options": ["Hosting databases", "Version control", "Styling web pages", "Compiling CSS"],
+          "correctIndex": 1
+        }
+      ]
+    }
+  ]
+}
